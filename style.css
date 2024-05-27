@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #94d8ff; */
+    /* background: linear-gradient(135deg, #88c8ed, #5488a6, #3b85b0); */
+    background: linear-gradient(150deg, #f5f598, #5488a6, #3b85b0);
+}
+
+.container {
+    width: 30%;
+    height: 70vh;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to left top, rgb(41, 15, 78), rgb(68, 27, 125), rgb(155, 97, 237));
+    border-radius: 0.4rem;
+    box-shadow: 10px 10px 10px rgb(35, 35, 35);
+    gap: 2%;
+}
+
+form {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+form input {
+    width: 75%;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding-left: 1.6rem;
+    outline: none;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    border-radius: 3rem;
+}
+
+form button {
+    border: none;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 100%;
+}
+
+.weather-card {
+    width: 90%;
+    height: 55vh;
+    margin: 0 auto;
+    /* background-color: rgba(255, 166, 0, 0.594); */
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-card img {
+    width: 70%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+.temperature {
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temp,
+.wind {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #e1dede;
+}
+
+.temperature span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#temp {
+    font-size: 3rem;
+}
+
+#wind {
+    font-size: 1.5rem;
+}
